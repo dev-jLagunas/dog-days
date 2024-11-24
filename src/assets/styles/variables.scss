@@ -1,0 +1,35 @@
+/********************************
+COLORS
+*********************************/
+$primary-white: #fbf8ef;
+$primary-dark: #181c14;
+$secondary-dark: #181c14;
+$softer-dark: #33372c;
+$primary-blue: #78b3ce;
+$primary-orange: #ff885b;
+
+/********************************
+Typography
+*********************************/
+$font-primary: "Italiana";
+$font-secondary: "Open Sans";
+$font-lg: 3rem;
+$font-md: 1.5rem;
+$font-reg: 1.2rem;
+$font-sm: 1rem;
+
+/********************************
+Spacing & Widths
+*********************************/
+$full-width: 100%;
+$spacing-md: 2rem;
+$spacing-reg: 1rem;
+
+/********************************
+Mixins
+*********************************/
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,28 @@
+/********************************
+CSS RESET
+*********************************/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********************************
+Global Settings
+*********************************/
+body {
+  background-color: $primary-white;
+}
+
+li {
+  list-style-type: none;
+}
+
+.content-container {
+  width: 95vw;
+  margin-inline: auto;
+  margin-top: 1.5rem;
+  color: $primary-dark;
+}
