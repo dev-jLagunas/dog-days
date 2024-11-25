@@ -2,7 +2,7 @@
 
 <template>
   <form class="msg-form-container" aria-label="Contact form">
-    <p class="msg-form-tagline">Need help with your furry family doggies?</p>
+    <p class="msg-form-tagline">Need help with your furry dog friends?</p>
     <h2 class="msg-form-title">Message Me</h2>
 
     <div class="msg-form-group">
@@ -64,15 +64,14 @@
     width: 90%;
     text-align: center;
     position: absolute;
-    top: -30px;
+    top: -20px;
     left: 0;
     padding-block: 5px;
     padding-inline: 5px;
     background: $primary-orange;
     color: $primary-white;
-    border-radius: 10px;
+    border-radius: 5px;
     letter-spacing: 1px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 
   .msg-form-group {
@@ -125,10 +124,12 @@
     height: 90%;
     justify-content: center;
     margin-top: 0;
-  }
 
-  .msg-form-tagline {
-    font-size: 2rem;
+    .msg-form-tagline {
+      font-size: 1.3rem;
+      top: -10px;
+      padding-block: 10px;
+    }
   }
 }
 </style>
