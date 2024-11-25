@@ -77,8 +77,8 @@ import harrisonImg from "@/assets/images/harrison-drawing.png";
   }
 
   .hero-header-tagline {
-    font-size: 1.3rem;
-    margin-right: $spacing-reg;
+    font-size: 1.2rem;
+    margin-right: $spacing-md;
   }
 }
 

@@ -30,6 +30,7 @@
   }
 }
 
+// Custom Highligth Style
 li {
   position: relative;
   cursor: pointer;
