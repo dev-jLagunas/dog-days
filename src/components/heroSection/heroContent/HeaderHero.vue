@@ -40,7 +40,6 @@ import harrisonImg from "@/assets/images/harrison-drawing.png";
 
   .hero-header-subtitle {
     font-size: $font-md;
-    color: $secondary-dark;
   }
 }
 
@@ -51,7 +50,6 @@ import harrisonImg from "@/assets/images/harrison-drawing.png";
 .hero-header-tagline {
   font-size: $font-reg;
   margin-top: $spacing-reg;
-  color: $secondary-dark;
 }
 
 // Tablet Styles

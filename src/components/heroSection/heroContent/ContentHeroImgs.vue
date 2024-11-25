@@ -2,23 +2,31 @@
 import MessageForm from "@/components/reusableComponents/MessageForm.vue";
 import forestWalk from "@/assets/images/forest-walk.jpg";
 import cityWalk from "@/assets/images/city-walk.jpg";
-import dogDrawing from "@/assets/images/leashed-dog-drawing.png";
-import beachWalk from "@/assets/images/shadow-walk.jpg";
 import dogLook from "@/assets/images/dog-leashed.jpg";
-import dogEating from "@/assets/images/dog-eating-drawing.png";
-import dogWalking from "@/assets/images/dog-walking.jpg";
 import pawPrint from "@/assets/svgs/paw-print.svg";
 </script>
 
 <template>
-  <figure class="content-hero-img-wrapper">
-    <img :src="forestWalk" alt="" class="img-forest" />
-    <img :src="pawPrint" alt="" class="img-paw-1" />
-    <img :src="pawPrint" alt="" class="img-paw-2" />
-    <img :src="dogLook" alt="" class="img-dog-leashed" />
-    <img :src="cityWalk" alt="" class="img-city" />
-    <img :src="pawPrint" alt="" class="img-paw-3" />
-  </figure>
+  <div class="content-hero-img-wrapper">
+    <img
+      :src="forestWalk"
+      alt="Scenic dog walk through forest"
+      class="hero-img-forest"
+    />
+    <img :src="pawPrint" alt="" role="presentation" class="hero-img-paw-1" />
+    <img :src="pawPrint" alt="" role="presentation" class="hero-img-paw-2" />
+    <img
+      :src="dogLook"
+      alt="A leashed dog sitting camly"
+      class="hero-img-dog"
+    />
+    <img
+      :src="cityWalk"
+      alt="A dog walk through the city"
+      class="hero-img-city"
+    />
+    <img :src="pawPrint" alt="" role="presentation" class="hero-img-paw-3" />
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -26,8 +34,8 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  gap: 5px;
-  margin-bottom: 1rem;
+  gap: $spacing-reg;
+  margin-bottom: $spacing-reg;
 
   img {
     width: 100%;
@@ -36,30 +44,26 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
   }
 }
 
-.img-forest {
+.hero-img-forest {
   grid-column: 1 / 5;
   object-fit: cover;
 }
 
-.img-paw-1,
-.img-paw-3 {
+.hero-img-paw-1,
+.hero-img-paw-3 {
   transform: rotate(12deg);
 }
 
-.img-paw-2 {
+.hero-img-paw-2 {
   transform: rotate(-12deg);
 }
 
-.img-drawing {
-  object-fit: contain;
-}
-
-.img-dog-leashed {
+.hero-img-dog {
   grid-column: 2 / 6;
   object-fit: cover;
 }
 
-.img-city {
+.hero-img-city {
   grid-column: 1 / 5;
   object-fit: cover;
   object-position: bottom;
