@@ -1,10 +1,12 @@
 <script setup>
-import HeroPage from "@/components/heroSection/HeroLandingSection.vue";
+import HeroSection from "@/components/heroSection/HeroLandingSection.vue";
+import ServicesSection from "@/components/servicesSection/ServicesLandingSection.vue";
 </script>
 
 <template>
   <div class="content-container">
-    <HeroPage />
+    <HeroSection />
+    <ServicesSection />
   </div>
 </template>
 
