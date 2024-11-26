@@ -78,6 +78,7 @@ const services = ref([
 @media (width >= 768px) {
   .services-container {
     display: flex;
+    gap: 10px;
   }
 }
 </style>
