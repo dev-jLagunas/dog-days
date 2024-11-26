@@ -3,6 +3,7 @@ import HeroSection from "@/components/heroSection/HeroLandingSection.vue";
 import ServicesSection from "@/components/servicesSection/ServicesLandingSection.vue";
 import TestimonialsSection from "@/components/testimonialsSection/TestimonialsLandingSection.vue";
 import CommunitySection from "@/components/communitySection/CommunityLandingSection.vue";
+import JoinSection from "@/components/joinSection/JoinLandingSection.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import CommunitySection from "@/components/communitySection/CommunityLandingSect
     <ServicesSection />
     <TestimonialsSection />
     <CommunitySection />
+    <JoinSection />
   </div>
 </template>
 
