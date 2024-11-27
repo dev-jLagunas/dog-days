@@ -1,5 +1,4 @@
 <script setup>
-import MessageForm from "@/components/reusableComponents/MessageForm.vue";
 import forestWalk from "@/assets/images/forest-walk.jpg";
 import cityWalk from "@/assets/images/city-walk.jpg";
 import dogLook from "@/assets/images/dog-leashed.jpg";

@@ -4,6 +4,7 @@ import ServicesSection from "@/components/servicesSection/ServicesLandingSection
 import TestimonialsSection from "@/components/testimonialsSection/TestimonialsLandingSection.vue";
 import CommunitySection from "@/components/communitySection/CommunityLandingSection.vue";
 import JoinSection from "@/components/joinSection/JoinLandingSection.vue";
+import FooterSection from "@/components/footerSection/FooterLandingSection.vue";
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import JoinSection from "@/components/joinSection/JoinLandingSection.vue";
     <TestimonialsSection />
     <CommunitySection />
     <JoinSection />
+    <FooterSection />
   </div>
 </template>
 
