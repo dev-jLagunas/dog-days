@@ -2,10 +2,26 @@
 
 <template>
   <ul class="navbar-container">
-    <li class="navbar-item">home</li>
-    <li>about</li>
-    <li>contact</li>
-    <li>gallery</li>
+    <li class="navbar-item">
+      <router-link to="/" class="nav-link" active-class="nav-link-active"
+        >Home</router-link
+      >
+    </li>
+    <li class="navbar-item">
+      <router-link to="/about" class="nav-link" active-class="nav-link-active"
+        >About</router-link
+      >
+    </li>
+    <li class="navbar-item">
+      <router-link to="/contact" class="nav-link" active-class="nav-link-active"
+        >Contact</router-link
+      >
+    </li>
+    <li class="navbar-item">
+      <router-link to="/gallery" class="nav-link" active-class="nav-link-active"
+        >Gallery</router-link
+      >
+    </li>
   </ul>
 </template>
 
@@ -18,7 +34,7 @@
   text-transform: capitalize;
   font-size: $font-reg;
 
-  .navbar-item {
+  .nav-link-active {
     border-bottom: 3px solid $primary-orange;
   }
 }

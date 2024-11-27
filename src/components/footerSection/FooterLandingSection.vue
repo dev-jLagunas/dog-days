@@ -61,7 +61,8 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
   color: $primary-white;
   font-weight: bold;
   padding: 15px;
-  border-radius: 5px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 10%;
   width: 50%;
   margin-inline: auto;
 }
