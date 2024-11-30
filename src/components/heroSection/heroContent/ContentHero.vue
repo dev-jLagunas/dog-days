@@ -34,7 +34,6 @@ import HeroImgs from "@/components/heroSection/heroContent/ContentHeroImgs.vue";
   .content-hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1600px;
     margin-inline: auto;
     gap: 2rem;
   }

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <ul class="navbar-container">
+  <ul class="navbar-container content-container">
     <li class="navbar-item">
       <router-link to="/" class="nav-link" active-class="nav-link-active"
         >Home</router-link
@@ -33,6 +33,7 @@
   margin-top: $spacing-reg;
   text-transform: capitalize;
   font-size: $font-reg;
+  width: 100%;
 
   .nav-link-active {
     border-bottom: 3px solid $primary-orange;

@@ -14,6 +14,7 @@ Global Settings
 *********************************/
 body {
   background-color: $primary-white;
+  font-family: $font-primary;
 }
 
 a {
@@ -30,5 +31,4 @@ li {
   margin-inline: auto;
   margin-top: 1.5rem;
   color: $primary-dark;
-  font-family: $font-primary;
 }

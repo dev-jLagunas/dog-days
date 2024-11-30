@@ -3,10 +3,20 @@ import forestWalk from "@/assets/images/forest-walk.jpg";
 import cityWalk from "@/assets/images/city-walk.jpg";
 import dogLook from "@/assets/images/dog-leashed.jpg";
 import pawPrint from "@/assets/svgs/paw-print.svg";
+import ownerDrawing from "@/assets/images/harrison-drawing.png";
 </script>
 
 <template>
   <div class="content-hero-img-wrapper">
+    <img
+      :src="ownerDrawing"
+      alt="Scenic dog walk through forest"
+      class="hero-img-owner"
+    />
+    <p class="content-hero-tagline">
+      Brighten your pet’s day! The Dog Days with Harrison. Menifee’s trusted,
+      compassionate care for furry friends.
+    </p>
     <img
       :src="forestWalk"
       alt="Scenic dog walk through forest"
@@ -43,6 +53,16 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
   }
 }
 
+.hero-img-owner {
+  grid-column: 1 / 6;
+}
+
+.content-hero-tagline {
+  grid-column: 1 / 6;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
 .hero-img-forest {
   grid-column: 1 / 5;
   object-fit: cover;
@@ -73,6 +93,11 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
     img {
       max-height: 200px;
     }
+  }
+
+  .hero-img-owner {
+    grid-column: 1 / 6;
+    object-fit: contain;
   }
 }
 </style>
