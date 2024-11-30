@@ -1,9 +1,9 @@
 <script setup>
-import HeaderHero from "@/components/heroSection/heroContent/HeaderHero.vue";
+import TheHeader from "@/components/reusableComponents/TheHeader.vue";
 </script>
 
 <template>
-  <HeaderHero />
+  <TheHeader />
   <router-view />
 </template>
 

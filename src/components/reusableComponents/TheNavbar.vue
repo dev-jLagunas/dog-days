@@ -32,18 +32,11 @@
   justify-content: space-around;
   margin-top: $spacing-reg;
   text-transform: capitalize;
-  font-size: $font-reg;
+  font-size: 1.5rem;
   width: 100%;
 
   .nav-link-active {
     border-bottom: 3px solid $primary-orange;
-  }
-}
-
-//Desktop Styles
-@media (width >= 1024px) {
-  .navbar-container {
-    font-size: $font-md;
   }
 }
 
