@@ -65,6 +65,8 @@ const testimonials = ref([
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 10px;
+  max-width: 400px;
+  margin-inline: auto;
 }
 
 .testimonials-card-stars-wrapper {

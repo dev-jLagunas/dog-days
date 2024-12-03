@@ -23,11 +23,12 @@ import TheCallBtn from "../reusableComponents/TheCallBtn.vue";
 <style lang="scss" scoped>
 .testimonials-content-container {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .testimonials-header-title {
   font-size: 3rem;
+  letter-spacing: 3px;
 }
 
 .testimonials-header-subtitle {

@@ -10,7 +10,7 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
   <div class="content-hero-img-wrapper">
     <img
       :src="ownerDrawing"
-      alt="Scenic dog walk through forest"
+      alt="Drawing of Harrison of dog days"
       class="hero-img-owner"
     />
     <p class="content-hero-tagline">
@@ -55,6 +55,8 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
 
 .hero-img-owner {
   grid-column: 1 / 6;
+  max-width: 300px;
+  margin-inline: auto;
 }
 
 .content-hero-tagline {

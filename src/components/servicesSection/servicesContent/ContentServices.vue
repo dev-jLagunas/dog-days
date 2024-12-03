@@ -53,9 +53,10 @@ const services = ref([
 .services-info-card-wrapper {
   @include flex-column-center;
   text-align: center;
+  margin-bottom: 1rem;
 
   .services-info-img-wrapper {
-    height: 175px;
+    height: 155px;
 
     .services-info-card-img {
       height: 100%;
