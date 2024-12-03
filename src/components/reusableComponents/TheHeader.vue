@@ -5,7 +5,7 @@ import TheSidebar from "@/components/reusableComponents/TheSidebar.vue";
 import sidebarSvg from "@/assets/svgs/sidebar-right-svgrepo-com.svg";
 
 // Reactive Properties
-const isSidenavOpen = ref(true);
+const isSidenavOpen = ref(false);
 
 // Methods
 const toggleSidenav = () => {

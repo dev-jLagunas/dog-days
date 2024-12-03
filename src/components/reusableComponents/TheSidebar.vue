@@ -58,6 +58,14 @@ const isActive = (path) => route.path === path;
     >
       Gallery
     </li>
+    <li>
+      <button
+        class="the-sidenav-item the-sidenav-item-btn"
+        @click="emit('close')"
+      >
+        X
+      </button>
+    </li>
   </ul>
 </template>
 
@@ -65,24 +73,28 @@ const isActive = (path) => route.path === path;
 .the-sidenav-container {
   @include flex-column-center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100vh;
   background-color: $primary-white;
-  transition: transform 0.3s ease-in-out; /* Smooth animation */
+  transition: transform 0.3s ease-in-out;
   z-index: 1000;
-  transform: translateX(100%); /* Hidden by default */
+  transform: translateX(100%);
 
-  /* When the sidenav is open */
   &.is-open {
-    transform: translateX(0); /* Slide in */
+    transform: translateX(0);
   }
 
   .the-sidenav-item {
     font-size: 1.5rem;
+    padding-top: 5px;
+  }
+
+  .the-sidenav-item-btn {
+    font-weight: bold;
   }
 
   .side-link-active {
