@@ -7,99 +7,90 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
 </script>
 
 <template>
-  <div class="content-hero-img-wrapper">
+  <div class="hero-content-container">
     <img
       :src="ownerDrawing"
       alt="Drawing of Harrison of dog days"
-      class="hero-img-owner"
+      class="hero-content-img hero-content-owner-img"
     />
-    <p class="content-hero-tagline">
-      Brighten your pet’s day! The Dog Days with Harrison. Menifee’s trusted,
-      compassionate care for furry friends.
+    <p class="hero-content-tagline">
+      Brighten your pet&rsquo;s day! The Dog Days with Harrison. Menifee&rsquo;s
+      trusted, compassionate care for furry friends.
     </p>
     <img
       :src="forestWalk"
       alt="Scenic dog walk through forest"
-      class="hero-img-forest"
+      class="hero-content-img hero-content-forest-img"
     />
-    <img :src="pawPrint" alt="" role="presentation" class="hero-img-paw-1" />
-    <img :src="pawPrint" alt="" role="presentation" class="hero-img-paw-2" />
+    <img
+      :src="pawPrint"
+      alt=""
+      role="presentation"
+      class="hero-content-img hero-content-paw-img"
+    />
+    <img
+      :src="pawPrint"
+      alt=""
+      role="presentation"
+      class="hero-content-img hero-content-paw-img"
+    />
     <img
       :src="dogLook"
       alt="A leashed dog sitting camly"
-      class="hero-img-dog"
+      class="hero-content-img hero-content-sitting-img"
     />
     <img
       :src="cityWalk"
       alt="A dog walk through the city"
-      class="hero-img-city"
+      class="hero-content-img hero-content-city-img"
     />
-    <img :src="pawPrint" alt="" role="presentation" class="hero-img-paw-3" />
+    <img
+      :src="pawPrint"
+      alt=""
+      role="presentation"
+      class="hero-content-img hero-content-paw-img"
+    />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.content-hero-img-wrapper {
+img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.hero-content-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  gap: $spacing-reg;
-  margin-bottom: $spacing-reg;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
 
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-}
-
-.hero-img-owner {
-  grid-column: 1 / 6;
-  max-width: 300px;
-  margin-inline: auto;
-}
-
-.content-hero-tagline {
-  grid-column: 1 / 6;
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-.hero-img-forest {
-  grid-column: 1 / 5;
-  object-fit: cover;
-}
-
-.hero-img-paw-1,
-.hero-img-paw-3 {
-  transform: rotate(12deg);
-}
-
-.hero-img-paw-2 {
-  transform: rotate(-12deg);
-}
-
-.hero-img-dog {
-  grid-column: 2 / 6;
-  object-fit: cover;
-}
-
-.hero-img-city {
-  grid-column: 1 / 5;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-@media (width >= 768px) {
-  .content-hero-img-wrapper {
-    img {
-      max-height: 200px;
-    }
-  }
-
-  .hero-img-owner {
-    grid-column: 1 / 6;
+  .hero-content-owner-img {
+    grid-column: 1/7;
+    margin-inline: auto;
     object-fit: contain;
+  }
+
+  .hero-content-paw-img {
+    transform: rotate(12deg);
+    object-fit: contain;
+  }
+
+  .hero-content-tagline {
+    grid-column: 1/ 7;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .hero-content-forest-img {
+    grid-column: 1 / 6;
+  }
+
+  .hero-content-sitting-img {
+    grid-column: 2/ 7;
+  }
+
+  .hero-content-city-img {
+    grid-column: 1 / 6;
   }
 }
 </style>
