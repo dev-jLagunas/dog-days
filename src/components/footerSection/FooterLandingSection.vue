@@ -39,7 +39,8 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
 
 <style lang="scss" scoped>
 .footer-content-container {
-  margin-block: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -73,13 +74,17 @@ h2 {
 
 .footer-content-info-text {
   font-size: 1.3rem;
-  display: flex;
-  align-items: center;
   gap: 5px;
+  margin-bottom: 1rem;
 }
 
 .footer-title-wrapper {
   margin-top: 1rem;
+}
+
+.footer-content-drawing {
+  max-height: 200px;
+  object-fit: contain;
 }
 
 @media (width >= 768px) {
@@ -92,8 +97,6 @@ h2 {
   }
 
   .the-navbar-tag {
-    position: absolute;
-    bottom: 0;
     gap: 20px;
   }
 
@@ -102,7 +105,8 @@ h2 {
   }
 
   .footer-content-drawing {
-    height: 150px;
+    max-height: 150px;
+    object-fit: contain;
   }
 }
 </style>

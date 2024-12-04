@@ -54,8 +54,6 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.png";
 }
 
 .join-info-item {
-  display: flex;
-  align-items: center;
   gap: 5px;
   margin-bottom: 5px;
 }

@@ -1,5 +1,6 @@
 <script setup>
 import TheHeader from "@/components/reusableComponents/TheHeader.vue";
+import TheFooter from "@/components/footerSection/FooterLandingSection.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import TheHeader from "@/components/reusableComponents/TheHeader.vue";
       <component :is="Component" />
     </transition>
   </router-view>
+  <TheFooter />
 </template>
 
 <style lang="scss" scoped>

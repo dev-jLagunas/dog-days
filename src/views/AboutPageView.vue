@@ -97,6 +97,7 @@ import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
+    justify-content: center;
     max-width: 1100px;
   }
 

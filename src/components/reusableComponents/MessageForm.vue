@@ -59,12 +59,11 @@
   margin-top: 4rem;
 
   .msg-form-tagline {
-    font-size: 1.1rem;
     font-family: $font-secondary, sans-serif;
     width: 90%;
     text-align: center;
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 0;
     padding-block: 5px;
     padding-inline: 5px;
@@ -101,6 +100,7 @@
     width: 80%;
     padding-left: 5px;
     padding-top: 5px;
+    margin-left: 5px;
   }
 
   .msg-form-btn-wrapper {
@@ -121,7 +121,7 @@
 
 @media (width >= 768px) {
   .msg-form-container {
-    height: 90%;
+    height: 95%;
     justify-content: center;
     margin-top: 0;
 
@@ -129,6 +129,12 @@
       font-size: 1.3rem;
       top: -10px;
       padding-block: 10px;
+    }
+
+    .msg-form-text-area {
+      height: 300px;
+      border-radius: 5px;
+      border: 0;
     }
   }
 }
