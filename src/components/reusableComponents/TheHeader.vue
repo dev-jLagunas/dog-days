@@ -34,28 +34,27 @@ const toggleSidenav = () => {
 <style lang="scss" scoped>
 .the-header-container {
   @include flex-row-between;
-  position: relative;
 }
 
 .the-header-title-wrapper {
-  width: 100%;
+  width: $full-width;
 
   .the-header-title {
-    font-size: 2.5rem;
+    font-size: $font-lg;
   }
 
   .the-header-subtitle {
-    font-size: 1.5rem;
+    font-size: $font-md;
   }
 }
 
 .the-header-sidenav-btn {
   .the-header-btn-svg {
-    height: 50px;
+    height: 60px;
+    transition: transform 0.3s ease-out;
 
     &:hover {
       transform: scale(1.2);
-      transition: all 0.7s ease-in-out;
       cursor: pointer;
     }
   }
@@ -66,17 +65,6 @@ const toggleSidenav = () => {
 }
 
 @media (width >= 768px) {
-  .the-header-title-wrapper {
-    width: 100%;
-
-    .the-header-title {
-      font-size: 3rem;
-    }
-
-    .the-header-subtitle {
-      font-size: 1.5rem;
-    }
-  }
   .the-header-sidenav-btn {
     display: none;
   }
@@ -90,7 +78,7 @@ const toggleSidenav = () => {
   .the-header-title-wrapper {
     display: flex;
     align-items: end;
-    gap: 1rem;
+    gap: $spacing-reg;
   }
 }
 </style>
