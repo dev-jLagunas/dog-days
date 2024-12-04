@@ -78,7 +78,8 @@ img {
   .hero-content-tagline {
     grid-column: 1/ 7;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: $font-md;
+    letter-spacing: $spacing-ltr;
   }
 
   .hero-content-forest-img {

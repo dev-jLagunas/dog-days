@@ -5,7 +5,7 @@
     <p class="msg-form-tagline">Need help with your furry dog friends?</p>
     <h2 class="msg-form-title">Message Me</h2>
 
-    <div class="msg-form-group">
+    <div class="msg-form-group-wrapper">
       <label for="name" class="msg-form-label">Name:</label>
       <input
         type="text"
@@ -16,7 +16,7 @@
         required
       />
     </div>
-    <div class="msg-form-group">
+    <div class="msg-form-group-wrapper">
       <label for="telephone" class="msg-form-label">Phone:</label>
       <input
         type="tel"
@@ -29,7 +29,7 @@
         aria-describedby="phone-help"
       />
     </div>
-    <div class="msg-form-group">
+    <div class="msg-form-group-wrapper">
       <label for="message" class="msg-form-label">Message:</label>
       <textarea
         id="message"
@@ -40,100 +40,76 @@
         required
       ></textarea>
     </div>
-    <div class="msg-form-btn-wrapper">
-      <button type="submit" class="msg-form-btn">Send</button>
-    </div>
+    <button type="submit" class="msg-form-btn">Send</button>
   </form>
 </template>
 
 <style lang="scss" scoped>
 .msg-form-container {
   @include flex-column-center;
+  @include custom-border;
   background: $primary-blue;
-  height: max-content;
-  padding-block: 2rem;
-  gap: 1rem;
+  padding-block: $spacing-md;
+  gap: $spacing-reg;
   position: relative;
-  border-top-left-radius: 40%;
-  border-bottom-right-radius: 10%;
-  margin-top: 4rem;
+  margin-top: $spacing-xl;
+  text-align: center;
 
   .msg-form-tagline {
     font-family: $font-secondary, sans-serif;
+    font-size: $font-reg;
     width: 90%;
-    text-align: center;
     position: absolute;
     top: -30px;
     left: 0;
-    padding-block: 5px;
-    padding-inline: 5px;
+    padding: $spacing-pad;
     background: $primary-orange;
     color: $primary-white;
-    border-radius: 5px;
-    letter-spacing: 1px;
+    border-radius: $radius-sm;
   }
 
-  .msg-form-group {
+  .msg-form-group-wrapper {
     display: flex;
     justify-content: space-between;
     width: 90%;
   }
 
   .msg-form-title {
-    font-size: 3rem;
+    font-size: $font-lg;
   }
 
   .msg-form-label {
-    font-size: 1.3rem;
+    font-size: $font-reg;
+    letter-spacing: $spacing-ltr;
   }
 
-  .msg-form-input {
-    padding-block: 5px;
-    padding-left: 5px;
-    border-radius: 2px;
+  .msg-form-input,
+  .msg-form-text-area {
+    padding: $spacing-pad;
+    border-radius: $radius-xs;
     border: 0;
     width: 80%;
-    margin-left: 5px;
   }
 
-  .msg-form-text-area {
-    width: 80%;
-    padding-left: 5px;
-    padding-top: 5px;
-    margin-left: 5px;
-  }
-
-  .msg-form-btn-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    .msg-form-btn {
-      background: $primary-orange;
-      border: 0;
-      font-size: 1.5rem;
-      width: 10rem;
-      border-radius: 5px;
-      color: $primary-white;
-    }
+  .msg-form-btn {
+    @include custom-orange-btn;
   }
 }
 
 @media (width >= 768px) {
   .msg-form-container {
-    height: 100%;
+    height: 80%;
     justify-content: center;
     margin-top: 0;
 
     .msg-form-tagline {
-      font-size: 1.3rem;
       top: -10px;
-      padding-block: 10px;
+      font-size: $font-md;
     }
 
     .msg-form-text-area {
       height: 300px;
-      border-radius: 5px;
+      border-radius: $radius-sm;
       border: 0;
     }
   }

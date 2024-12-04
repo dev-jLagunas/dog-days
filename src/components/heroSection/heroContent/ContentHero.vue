@@ -18,6 +18,7 @@ import HeroImgs from "@/components/heroSection/heroContent/ContentHeroImgs.vue";
 @media (width >= 768px) {
   .content-hero-container {
     @include grid-two-column;
+    margin-top: $spacing-lg;
   }
 
   .content-hero-img-wrapper {

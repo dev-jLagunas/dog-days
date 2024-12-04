@@ -22,8 +22,18 @@ $font-base: 1rem;
 Spacing & Widths
 *********************************/
 $full-width: 100%;
+$spacing-xl: 4rem;
+$spacing-lg: 3rem;
 $spacing-md: 2rem;
 $spacing-reg: 1rem;
+$spacing-pad: 6px;
+$spacing-ltr: 1px;
+
+/********************************
+Radius
+*********************************/
+$radius-xs: 3px;
+$radius-sm: 6px;
 
 /********************************
 Mixins
@@ -45,4 +55,41 @@ Mixins
   grid-template-columns: 1fr 1fr;
   gap: $spacing-reg;
   align-items: center;
+}
+
+@mixin custom-border {
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 10%;
+}
+
+@mixin custom-orange-btn {
+  background: $primary-orange;
+  color: $primary-white;
+  border: 0;
+  font-size: $font-md;
+  letter-spacing: $spacing-ltr;
+  font-weight: 600;
+  width: 10rem;
+  padding-block: $spacing-pad;
+  border-radius: $radius-xs;
+
+  &:hover {
+    animation: jelly 0.5s;
+  }
+
+  @keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
 }
