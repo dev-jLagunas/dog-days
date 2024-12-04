@@ -11,7 +11,7 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
     <img
       :src="ownerDrawing"
       alt="Drawing of Harrison of dog days"
-      class="hero-content-img hero-content-owner-img"
+      class="hero-content-owner-img"
     />
     <p class="hero-content-tagline">
       Brighten your pet&rsquo;s day! The Dog Days with Harrison. Menifee&rsquo;s
@@ -26,13 +26,13 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
       :src="pawPrint"
       alt=""
       role="presentation"
-      class="hero-content-img hero-content-paw-img"
+      class="hero-content-paw-img"
     />
     <img
       :src="pawPrint"
       alt=""
       role="presentation"
-      class="hero-content-img hero-content-paw-img"
+      class="hero-content-paw-img"
     />
     <img
       :src="dogLook"
@@ -48,7 +48,7 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
       :src="pawPrint"
       alt=""
       role="presentation"
-      class="hero-content-img hero-content-paw-img"
+      class="hero-content-paw-img"
     />
   </div>
 </template>
@@ -57,6 +57,10 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
 img {
   max-height: 200px;
   object-fit: cover;
+}
+
+.hero-content-img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
 .hero-content-container {
