@@ -1,0 +1,1 @@
+import{_ as c,o as t,c as n}from"./index-xwshVEAe.js";const o={},e={class:"call-btn-content-container"};function a(s,r){return t(),n("button",e,"Call Harrison Now")}const l=c(o,[["render",a],["__scopeId","data-v-4c2acd6c"]]);export{l as T};
