@@ -17,25 +17,13 @@ import HeroImgs from "@/components/heroSection/heroContent/ContentHeroImgs.vue";
 
 @media (width >= 768px) {
   .content-hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    align-items: center;
+    @include grid-two-column;
   }
 
   .content-hero-img-wrapper {
     img {
       max-height: 200px;
     }
-  }
-}
-
-@media (width >= 1024px) {
-  .content-hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-inline: auto;
-    gap: 2rem;
   }
 }
 </style>

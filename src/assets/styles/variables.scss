@@ -39,3 +39,10 @@ Mixins
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin grid-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-reg;
+  align-items: center;
+}

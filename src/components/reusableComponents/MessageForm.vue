@@ -121,7 +121,7 @@
 
 @media (width >= 768px) {
   .msg-form-container {
-    height: 95%;
+    height: 100%;
     justify-content: center;
     margin-top: 0;
 
