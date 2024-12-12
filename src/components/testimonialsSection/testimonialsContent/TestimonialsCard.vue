@@ -27,7 +27,7 @@ const testimonials = ref([
 </script>
 
 <template>
-  <div class="testimonials-strutural-wrapper">
+  <div class="testimonials-cards-container">
     <article
       v-for="(testimonial, index) in testimonials"
       :key="index"
@@ -56,15 +56,11 @@ const testimonials = ref([
 </template>
 
 <style lang="scss" scoped>
-.testimonials-content-header-wrapper {
-  text-align: center;
-}
-
 .testimonials-card-wrapper {
   border: 2px solid $primary-blue;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
+  padding: $spacing-reg;
+  margin-bottom: $spacing-reg;
+  border-radius: $radius-sm;
   max-width: 400px;
   margin-inline: auto;
 }
@@ -73,19 +69,18 @@ const testimonials = ref([
   background: $primary-blue;
   display: flex;
   justify-content: space-evenly;
-  padding-block: 2px;
-  border-radius: 5px;
+  padding-block: 5px;
+  border-radius: $radius-xs;
 }
 
 .testimonials-card-text {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: $spacing-reg;
   font-family: $font-secondary;
 }
 
 .testimonials-card-footer-img {
-  width: 100%;
-  height: 100%;
+  @include img-settings;
   object-fit: contain;
   max-width: 400px;
 }
@@ -95,15 +90,13 @@ const testimonials = ref([
 }
 
 .testimonials-card-footer-name {
-  font-size: 1.5rem;
+  font-size: $font-md;
 }
 
 @media (width >= 768px) {
-  .testimonials-strutural-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
+  .testimonials-cards-container {
+    @include grid-three-column;
+    gap: $spacing-reg;
   }
 }
 </style>

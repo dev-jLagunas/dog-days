@@ -63,6 +63,11 @@ Mixins
   align-items: center;
 }
 
+@mixin grid-three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 @mixin custom-border {
   border-top-left-radius: 40%;
   border-bottom-right-radius: 10%;
