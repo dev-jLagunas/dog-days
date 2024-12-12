@@ -103,8 +103,7 @@
     margin-top: 0;
 
     .msg-form-tagline {
-      top: -10px;
-      font-size: $font-md;
+      top: -30px;
     }
 
     .msg-form-text-area {

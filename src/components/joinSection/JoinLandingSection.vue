@@ -1,29 +1,24 @@
 <script setup>
+import { ref } from "vue";
 import JoinContent from "@/components/joinSection/joinContent/JoinContent.vue";
+import SectionTitles from "@/components/reusableComponents/SectionTitles.vue";
+
+//Props Content
+const sectionTitle = ref("Join the Pack");
+const sectionInfo = ref(
+  "Join the dozens of local families who trust me to care for their furry friends!"
+);
 </script>
 
 <template>
-  <header class="join-content-container-header">
-    <h2 class="join-header-title">Join The Pack</h2>
-    <p class="join-header-subtitle">
-      Join the dozens of local families who trust me to care for their furry
-      friends!"
-    </p>
-  </header>
-  <JoinContent />
+  <div class="join-landing-container">
+    <SectionTitles :section-title="sectionTitle" :section-info="sectionInfo" />
+    <JoinContent />
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.join-content-container-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.join-header-title {
-  font-size: 3rem;
-}
-
-.join-header-subtitle {
-  font-size: 1.3rem;
+.join-landing-container {
+  margin-block: $spacing-section;
 }
 </style>

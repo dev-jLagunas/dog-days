@@ -49,13 +49,8 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.png";
 
 <style lang="scss" scoped>
 .join-info-wrapper {
-  margin-bottom: 3rem;
+  margin-bottom: $spacing-lg;
   text-align: center;
-}
-
-.join-info-item {
-  gap: 5px;
-  margin-bottom: 5px;
 }
 
 .join-info-item-img {
@@ -63,8 +58,7 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.png";
 }
 
 .join-info-svg {
-  height: 100%;
-  width: 100%;
+  @include img-settings;
   object-fit: contain;
 }
 
@@ -78,8 +72,7 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.png";
 }
 
 .join-imgs-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  @include grid-three-column;
 }
 
 .join-content-thanks-text {
@@ -88,7 +81,7 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.png";
   border-radius: 5px;
   color: $primary-white;
   font-weight: bold;
-  margin-top: 1.5rem;
+  margin-top: $spacing-reg;
 }
 
 @media (width >= 1024px) {
@@ -97,7 +90,7 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.png";
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 700px;
-    gap: 1rem;
+    gap: $spacing-reg;
   }
 
   .join-info-item {
