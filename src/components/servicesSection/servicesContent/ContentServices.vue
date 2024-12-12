@@ -56,6 +56,7 @@ const services = ref([
 
     .services-info-card-img {
       @include img-settings;
+      object-fit: contain;
     }
   }
 
