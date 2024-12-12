@@ -101,6 +101,13 @@ img {
 
   .hero-content-city-img {
     grid-column: 1 / 6;
+    object-position: bottom;
+  }
+}
+
+@media (width >= 768px) {
+  .hero-content-container {
+    margin-top: $spacing-lg;
   }
 }
 </style>

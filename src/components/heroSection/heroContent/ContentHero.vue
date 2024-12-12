@@ -6,25 +6,18 @@ import HeroImgs from "@/components/heroSection/heroContent/ContentHeroImgs.vue";
 <template>
   <div class="content-hero-container">
     <HeroImgs />
-    <MessageForm />
+    <MessageForm class="msg-form-comp" />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.content-hero-container {
-  margin-block: 2rem;
-}
-
 @media (width >= 768px) {
   .content-hero-container {
     @include grid-two-column;
-    margin-top: $spacing-lg;
   }
 
-  .content-hero-img-wrapper {
-    img {
-      max-height: 200px;
-    }
+  .msg-form-comp {
+    margin-top: 10%;
   }
 }
 </style>
