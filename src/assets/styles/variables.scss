@@ -22,6 +22,7 @@ $font-base: 1rem;
 Spacing & Widths
 *********************************/
 $full-width: 100%;
+$spacing-section: 5rem;
 $spacing-xl: 4rem;
 $spacing-lg: 3rem;
 $spacing-md: 2rem;
@@ -120,4 +121,9 @@ Mixins
     transform-origin: bottom left;
     transform: scaleX(1);
   }
+}
+
+@mixin img-settings {
+  height: 100%;
+  width: 100%;
 }

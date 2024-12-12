@@ -46,27 +46,21 @@ const services = ref([
   </div>
 </template>
 <style lang="scss" scoped>
-.services-container {
-  margin-bottom: 1rem;
-}
-
 .services-info-card-wrapper {
   @include flex-column-center;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-reg;
 
   .services-info-img-wrapper {
-    height: 155px;
+    height: 140px;
 
     .services-info-card-img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
+      @include img-settings;
     }
   }
 
   .services-info-card-title {
-    font-size: 1.5rem;
+    font-size: $font-md;
     border-bottom: 4px solid $primary-blue;
     margin-bottom: 0.5rem;
   }
@@ -79,7 +73,7 @@ const services = ref([
 @media (width >= 768px) {
   .services-container {
     display: flex;
-    gap: 10px;
+    gap: $spacing-reg;
   }
 }
 </style>

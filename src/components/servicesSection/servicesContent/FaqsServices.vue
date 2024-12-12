@@ -2,7 +2,6 @@
 import { ref } from "vue";
 import dogSvgBlack from "@/assets/svgs/dog-terrier-svgrepo-black.svg";
 import dogSvgWhite from "@/assets/svgs/dog-terrier-svgrepo-white.svg";
-import arrowSvg from "@/assets/svgs/arrow-to-down-left-svgrepo-com.svg";
 
 const faqs = ref([
   {
@@ -68,39 +67,29 @@ const faqs = ref([
 .faqs-content-container {
   background: $primary-blue;
   text-align: center;
-  padding-block: 1rem;
-  border-radius: 10px;
-  margin-top: 2rem;
-}
+  padding: $spacing-reg;
+  border-radius: $radius-sm;
 
-.faqs-content-title {
-  color: $primary-white;
-  margin-bottom: 1rem;
-}
+  .faqs-content-title {
+    color: $primary-white;
+    margin-bottom: $spacing-reg;
+  }
 
-.faqs-content-card-wrapper {
-  margin-bottom: 1rem;
-}
+  .faqs-content-card-img {
+    height: 50px;
+  }
 
-.faqs-content-card-img {
-  height: 50px;
-}
-
-.faqs-content-card-question {
-  font-size: 1rem;
-}
-
-.faqs-content-card-answer {
-  padding-inline: 5px;
-  margin-top: 5px;
-  font-family: $font-secondary;
+  .faqs-content-card-answer {
+    margin-top: 5px;
+    font-family: $font-secondary;
+  }
 }
 
 @media (width >= 768px) {
   .faqs-content-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-reg;
   }
 
   .faqs-content-title {

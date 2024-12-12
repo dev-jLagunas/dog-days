@@ -21,17 +21,6 @@ const sectionInfo = ref(
 
 <style lang="scss" scoped>
 .services-landing-container {
-  margin-block: 3rem;
-}
-.header-title {
-  font-size: 3rem;
-  text-align: center;
-  letter-spacing: 3px;
-}
-
-.header-title-subtitle {
-  font-size: 1.3rem;
-  text-align: center;
-  margin-bottom: 1rem;
+  margin-block: $spacing-section;
 }
 </style>

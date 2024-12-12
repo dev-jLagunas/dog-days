@@ -22,6 +22,7 @@ const props = defineProps({
 <style lang="scss">
 .section-titles-container {
   text-align: center;
+  margin-bottom: $spacing-md;
 
   .section-title {
     font-size: $font-lg;
@@ -29,6 +30,14 @@ const props = defineProps({
 
   .section-info {
     font-size: $font-reg;
+  }
+}
+
+@media (width >= 768px) {
+  .section-titles-container {
+    .section-info {
+      font-size: $font-md;
+    }
   }
 }
 </style>
