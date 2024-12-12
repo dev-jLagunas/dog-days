@@ -34,7 +34,13 @@ import menifeeImg from "@/assets/pngs/menifee-town.png";
   background: $primary-blue;
   color: $primary-white;
   font-weight: bold;
-  padding: 5px;
+  padding: 8px;
+  border-radius: $radius-sm;
+  margin-bottom: $spacing-reg;
+}
+
+.community-info-img {
+  margin-top: -2rem;
 }
 
 .community-info-img,
@@ -45,15 +51,12 @@ import menifeeImg from "@/assets/pngs/menifee-town.png";
 
 .community-content-img {
   width: 100%;
-  margin-block: 2rem;
 }
 
 @media (width >= 768px) {
   .community-content-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include grid-three-column;
     align-items: center;
-    margin-bottom: 2rem;
   }
 
   .community-info-img,
@@ -68,10 +71,8 @@ import menifeeImg from "@/assets/pngs/menifee-town.png";
 
   .community-img-text,
   .community-img-text-b {
-    width: 50%;
+    width: 70%;
     margin-inline: auto;
-    padding-inline: 10px;
-    border-radius: 5px;
   }
 }
 </style>
