@@ -8,15 +8,20 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
 
 <template>
   <div class="hero-content-container">
+    <!-- Owner Drawing -->
     <img
       :src="ownerDrawing"
       alt="Drawing of Harrison of dog days"
       class="hero-content-owner-img"
     />
+
+    <!-- Tagline -->
     <p class="hero-content-tagline">
       Brighten your pet&rsquo;s day! The Dog Days with Harrison. Menifee&rsquo;s
       trusted, compassionate care for furry friends.
     </p>
+
+    <!-- Grid Images -->
     <img
       :src="forestWalk"
       alt="Scenic dog walk through forest"
@@ -60,7 +65,7 @@ img {
 }
 
 .hero-content-img {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  box-shadow: $custom-shadow;
 }
 
 .hero-content-container {
