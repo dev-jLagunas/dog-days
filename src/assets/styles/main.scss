@@ -15,6 +15,7 @@ Global Settings
 body {
   background-color: $primary-white;
   font-family: $font-primary;
+  color: $primary-dark;
 }
 
 a {
@@ -43,5 +44,4 @@ button {
   width: 90vw;
   margin-inline: auto;
   margin-top: 1.5rem;
-  color: $primary-dark;
 }
