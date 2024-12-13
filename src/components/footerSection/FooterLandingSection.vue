@@ -9,11 +9,20 @@ const isPrivacyModalOpen = ref(false);
 const togglePrivacyModal = () => {
   isPrivacyModalOpen.value = !isPrivacyModalOpen.value;
 };
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 </script>
 
 <template>
   <footer class="the-footer-container content-container">
-    <button class="the-footer-scroll-btn">Back To Top</button>
+    <button class="the-footer-scroll-btn" @click="scrollToTop">
+      Back To Top
+    </button>
     <div class="the-footer-content-wrapper">
       <ul class="the-footer-nav-wrapper">
         <li class="the-navbar-item">
