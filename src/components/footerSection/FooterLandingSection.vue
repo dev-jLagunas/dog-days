@@ -163,7 +163,7 @@ Privacy Modal Styles
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .modal-close-btn {

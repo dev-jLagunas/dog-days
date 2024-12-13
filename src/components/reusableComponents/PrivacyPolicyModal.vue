@@ -4,7 +4,7 @@ const emit = defineEmits(["close"]);
 </script>
 
 <template>
-  <article class="privacy-modal-container">
+  <article class="privacy-modal-container" @click.self="$emit('close')">
     <h2 class="privacy-modal-title">Privacy Policy</h2>
     <p class="privacy-modal-desc">
       At The Dog Days with Harrison, we respect your privacy and are committed
@@ -79,6 +79,8 @@ const emit = defineEmits(["close"]);
   border-radius: $radius-sm;
   width: 90%;
   max-width: 1000px;
+  overflow-y: auto;
+  max-height: 90vh;
 
   .privacy-modal-title {
     margin-top: $spacing-md;
