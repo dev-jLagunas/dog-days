@@ -7,31 +7,27 @@ import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
 <template>
   <div class="content-container about-page-container">
     <div class="about-img-wrapper">
-      <img :src="harrisonImg" alt="photo of harrison" class="about-page-img" />
+      <img
+        :src="harrisonImg"
+        alt="photo of owner Harrison"
+        class="about-page-img"
+      />
     </div>
     <article class="about-page-info-wrapper">
       <img :src="pawPrintSvg" alt="" class="about-paw-svg" />
       <h2 class="about-page-name">I'm Harrison</h2>
       <p class="about-page-desc">
-        I’m a passionate and experienced dog walker and sitter based in Menifee,
-        California. I’ve always had a love for animals, and over the years, I’ve
-        turned that passion into a rewarding career by caring for dogs of all
-        breeds, sizes, and energy levels. My goal is to provide personalized
-        care and attention to each furry friend I meet, ensuring they’re happy,
-        safe, and well-exercised. Whether it’s a daily walk, overnight sitting,
-        or just a quick visit, I treat every dog as if they were my own. Seeing
-        wagging tails and joyful pups is what makes this work so fulfilling for
-        me!
+        I&#39;m a passionate and experienced dog walker and sitter based in
+        Menifee, California. I&#39;ve always had a love for animals, and over
+        the years, I&#39;ve turned that passion into a rewarding career by
+        caring for dogs of all breeds, sizes, and energy levels. My goal is to
+        provide personalized care and attention to each furry friend I meet,
+        ensuring they&#39;re happy, safe, and well-exercised. Whether it&#39;s a
+        daily walk, overnight sitting, or just a quick visit, I treat every dog
+        as if they were my own. Seeing wagging tails and joyful pups is what
+        makes this work so fulfilling for me!
       </p>
       <TheCallBtn />
-      <div class="routing-content-container">
-        <li class="routing-item">
-          <a href="">Back Home</a>
-        </li>
-        <li class="routing-item">
-          <a href="">See Gallery</a>
-        </li>
-      </div>
     </article>
   </div>
 </template>
@@ -45,7 +41,9 @@ import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
 .about-img-wrapper {
   position: relative;
   display: inline-block;
+  margin-top: $spacing-md;
 
+  // Orange and Blue Backgrounds
   &::before {
     content: "";
     position: absolute;
@@ -53,7 +51,7 @@ import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
     left: -1%;
     width: 90%;
     height: 90%;
-    border-radius: 10px;
+    border-radius: $radius-sm;
     background-color: $primary-orange;
     z-index: -2;
   }
@@ -67,12 +65,12 @@ import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
     height: 90%;
     background-color: $primary-blue;
     z-index: -3;
-    border-radius: 10px;
+    border-radius: $radius-sm;
   }
 }
 .about-page-img {
   width: 90%;
-  border-radius: 10px;
+  border-radius: $radius-sm;
 }
 
 .about-page-desc {
@@ -84,10 +82,10 @@ import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
 }
 
 .about-page-info-wrapper {
-  margin-top: 2rem;
+  margin-top: $spacing-md;
 
   .about-page-name {
-    font-size: 3rem;
+    font-size: $font-lg;
   }
 }
 
@@ -95,35 +93,16 @@ import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
   .about-page-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: $spacing-lg;
     align-items: center;
     justify-content: center;
-    max-width: 1100px;
+    max-width: 1000px;
   }
+}
 
+@media (width >= 1024px) {
   .about-page-desc {
-    font-size: 1rem;
-    padding-block: 1rem;
-  }
-}
-
-.routing-content-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1rem;
-
-  .routing-item {
-    font-size: 1.3rem;
-  }
-}
-
-.routing-item {
-  border-bottom: 5px solid $primary-blue;
-
-  &:hover {
-    transform: scale(1.2);
-    transition-duration: 0.5s;
-    cursor: pointer;
+    font-size: $font-md;
   }
 }
 </style>
