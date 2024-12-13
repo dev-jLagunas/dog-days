@@ -1,5 +1,14 @@
 <script setup>
-import pawPrint from "@/assets/svgs/paw-print.svg";
+import { ref } from "vue";
+import PrivacyModal from "@/components/reusableComponents/PrivacyPolicyModal.vue";
+
+// Reactive Properties
+const isPrivacyModalOpen = ref(false);
+
+// Methods
+const togglePrivacyModal = () => {
+  isPrivacyModalOpen.value = !isPrivacyModalOpen.value;
+};
 </script>
 
 <template>
@@ -49,9 +58,19 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
         <p>with Harrison</p>
       </div>
     </div>
-    <button class="the-footer-privacy-btn">Privacy Policy</button>
+    <button class="the-footer-privacy-btn" @click="togglePrivacyModal">
+      Privacy Policy
+    </button>
     <p class="the-footer-copyright">@ 2024 The Dog Days. All Rights Reserved</p>
   </footer>
+  <!-- Privacy Modal -->
+  <div
+    v-if="isPrivacyModalOpen"
+    class="privacy-modal"
+    @click.self="togglePrivacyModal"
+  >
+    <PrivacyModal @close="togglePrivacyModal" />
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -67,6 +86,7 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
     padding-block: 5px;
     margin-right: auto;
     margin-bottom: $spacing-md;
+    font-size: $font-base;
   }
 }
 
@@ -127,5 +147,26 @@ import pawPrint from "@/assets/svgs/paw-print.svg";
       flex-direction: row;
     }
   }
+}
+
+/*********************************
+Privacy Modal Styles
+**********************************/
+.privacy-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-close-btn {
+  font-size: $font-base;
+  cursor: pointer;
 }
 </style>
