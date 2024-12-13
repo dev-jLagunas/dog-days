@@ -1,1 +1,0 @@
-/* empty css                                                                   */import{_ as c,o as t,c as o}from"./index-XED9u7fk.js";const n={},e={class:"call-btn-content-container"};function a(r,s){return t(),o("button",e,"Call Harrison Now")}const i=c(n,[["render",a],["__scopeId","data-v-4c2acd6c"]]);export{i as T};
