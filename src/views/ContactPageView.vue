@@ -3,6 +3,7 @@ import dogPhoneImg from "@/assets/pngs/dog-calling.png";
 import dogEmailImg from "@/assets/pngs/dog-emailing.png";
 import menifeeAreaImg from "@/assets/pngs/menifee-area.png";
 import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
+import MessageForm from "@/components/reusableComponents/MessageForm.vue";
 
 const contactInfo = [
   {
@@ -28,21 +29,18 @@ const contactInfo = [
 
 <template>
   <div class="content-container contact-page-container">
-    <h2 class="contact-page-title">Contact Me</h2>
     <div class="contact-list">
       <div
         v-for="(contact, index) in contactInfo"
         :key="index"
         class="contact-item-wrapper"
       >
-        <div class="contact-info-wrapper">
-          <p class="contact-label">{{ contact.label }}</p>
-          <p class="contact-value">{{ contact.value }}</p>
-        </div>
+        <p class="contact-label">{{ contact.label }}</p>
         <img :src="contact.icon" :alt="contact.alt" class="contact-icon" />
+        <p class="contact-value">{{ contact.value }}</p>
       </div>
     </div>
-    <TheCallBtn />
+    <MessageForm />
   </div>
 </template>
 
@@ -51,43 +49,57 @@ const contactInfo = [
   text-align: center;
 }
 
-.contact-page-title {
-  margin-bottom: 1rem;
-  font-size: 3rem;
-}
-
 .contact-item-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center;
+  margin-block: $spacing-md;
 }
 
 .contact-icon {
-  width: 60%;
+  width: 40%;
 }
 
 .contact-label {
-  font-size: 1.5rem;
-  border-bottom: 4px solid $primary-blue;
+  background: $primary-blue;
+  color: $primary-white;
   width: max-content;
+  padding: 5px $spacing-reg;
   margin-inline: auto;
+  border-radius: $radius-xs;
+  font-weight: bold;
+  font-size: $font-base;
   margin-bottom: 0.5rem;
 }
 
 .contact-value {
-  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: $font-md;
 }
 
 @media (width >= 768px) {
-  .contact-list {
+  .content-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 12px;
+    gap: 2rem;
+  }
+}
+
+@media (width >= 1024px) {
+  .content-container {
   }
 
   .contact-icon {
-    width: 80%;
+    width: 50%;
+    object-fit: contain;
+  }
+
+  .contact-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .contact-item-wrapper:nth-of-type(3) {
+      grid-column: 1/3;
+    }
   }
 }
 </style>
