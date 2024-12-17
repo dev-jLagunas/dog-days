@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
-import grandmaImg from "@/assets/pngs/sara-grandma.png";
-import boyImg from "@/assets/pngs/boy-dog.png";
-import familyImg from "@/assets/pngs/smith-family.png";
+import grandmaImg from "@/assets/pngs/sara-grandma.webp";
+import boyImg from "@/assets/pngs/boy-dog.webp";
+import familyImg from "@/assets/pngs/smith-family.webp";
 
 const testimonials = ref([
   {

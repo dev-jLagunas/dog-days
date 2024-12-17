@@ -1,7 +1,7 @@
 <script setup>
-import dogRunImg from "@/assets/pngs/running-dog.png";
-import dogChillImg from "@/assets/pngs/chilling-dog.png";
-import menifeeImg from "@/assets/pngs/menifee-town.png";
+import dogRunImg from "@/assets/pngs/running-dog.webp";
+import dogChillImg from "@/assets/pngs/chilling-dog.webp";
+import menifeeImg from "@/assets/pngs/menifee-town.webp";
 </script>
 
 <template>

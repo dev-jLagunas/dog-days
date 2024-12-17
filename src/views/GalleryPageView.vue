@@ -1,10 +1,10 @@
 <script setup>
-import dogImg1 from "@/assets/images/dog-walking-img1.jpg";
-import dogImg2 from "@/assets/images/dog-walking-img2.jpg";
-import dogImg3 from "@/assets/images/dog-walking-img3.jpg";
-import dogImg4 from "@/assets/images/dog-walking-img4.jpg";
-import dogImg5 from "@/assets/images/dog-walking-img5.jpg";
-import dogImg6 from "@/assets/images/dog-walking-img6.jpg";
+import dogImg1 from "@/assets/images/dog-walking-img1.webp";
+import dogImg2 from "@/assets/images/dog-walking-img2.webp";
+import dogImg3 from "@/assets/images/dog-walking-img3.webp";
+import dogImg4 from "@/assets/images/dog-walking-img4.webp";
+import dogImg5 from "@/assets/images/dog-walking-img5.webp";
+import dogImg6 from "@/assets/images/dog-walking-img6.webp";
 import pawPrint from "@/assets/svgs/paw-print.svg";
 import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
 </script>

@@ -1,7 +1,7 @@
 <script setup>
-import dogPhoneImg from "@/assets/pngs/dog-calling.png";
-import dogEmailImg from "@/assets/pngs/dog-emailing.png";
-import menifeeAreaImg from "@/assets/pngs/menifee-area.png";
+import dogPhoneImg from "@/assets/pngs/dog-calling.webp";
+import dogEmailImg from "@/assets/pngs/dog-emailing.webp";
+import menifeeAreaImg from "@/assets/pngs/menifee-area.webp";
 import MessageForm from "@/components/reusableComponents/MessageForm.vue";
 
 const contactInfo = [

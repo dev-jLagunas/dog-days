@@ -1,9 +1,9 @@
 <script setup>
 import MessageForm from "@/components/reusableComponents/MessageForm.vue";
 import pawPrintSvg from "@/assets/svgs/paw-print.svg";
-import harrisonImg from "@/assets/pngs/harrison-standing.png";
-import dogsLeftImg from "@/assets/pngs/row-dogs-left.png";
-import dogsRightImg from "@/assets/pngs/row-dog-right.png";
+import harrisonImg from "@/assets/pngs/harrison-standing.webp";
+import dogsLeftImg from "@/assets/pngs/row-dogs-left.webp";
+import dogsRightImg from "@/assets/pngs/row-dog-right.webp";
 </script>
 
 <template>

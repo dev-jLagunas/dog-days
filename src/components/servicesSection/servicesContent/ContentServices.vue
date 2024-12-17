@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
-import dogSitting from "@/assets/pngs/sitting-dog.png";
-import dogVisiting from "@/assets/pngs/visiting-dog.png";
-import dogWalking from "@/assets/pngs/walking-dog.png";
+import dogSitting from "@/assets/pngs/sitting-dog.webp";
+import dogVisiting from "@/assets/pngs/visiting-dog.webp";
+import dogWalking from "@/assets/pngs/walking-dog.webp";
 
 const services = ref([
   {

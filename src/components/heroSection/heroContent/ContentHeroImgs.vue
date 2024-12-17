@@ -1,9 +1,9 @@
 <script setup>
-import forestWalk from "@/assets/images/forest-walk.jpg";
-import cityWalk from "@/assets/images/city-walk.jpg";
-import dogLook from "@/assets/images/dog-leashed.jpg";
+import forestWalk from "@/assets/images/forest-walk.webp";
+import cityWalk from "@/assets/images/city-walk.webp";
+import dogLook from "@/assets/images/dog-leashed.webp";
 import pawPrint from "@/assets/svgs/paw-print.svg";
-import ownerDrawing from "@/assets/images/harrison-drawing.png";
+import ownerDrawing from "@/assets/images/harrison-drawing.webp";
 </script>
 
 <template>

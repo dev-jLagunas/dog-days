@@ -1,5 +1,5 @@
 <script setup>
-import harrisonImg from "@/assets/images/harisson-photo.jpg";
+import harrisonImg from "@/assets/images/harisson-photo.webp";
 import pawPrintSvg from "@/assets/svgs/paw-print.svg";
 import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
 </script>
