@@ -4,7 +4,6 @@ import cityWalk from "@/assets/images/city-walk.jpg";
 import dogLook from "@/assets/images/dog-leashed.jpg";
 import pawPrint from "@/assets/svgs/paw-print.svg";
 import ownerDrawing from "@/assets/images/harrison-drawing.png";
-import TheGallery from "@/components/reusableComponents/TheGallery.vue";
 </script>
 
 <template>
