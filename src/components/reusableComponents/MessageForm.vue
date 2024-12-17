@@ -1,7 +1,18 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+// Reactive Properties
+const isSubmitted = ref(false);
+const hasError = ref(false);
+</script>
 
 <template>
-  <form class="msg-form-container" aria-label="Contact form">
+  <form
+    class="msg-form-container"
+    aria-label="Contact form"
+    action="https://formspree.io/f/xpwzgllk"
+    method="POST"
+  >
     <p class="msg-form-tagline">Need help with your furry dog friends?</p>
     <h2 class="msg-form-title">Message Me</h2>
 
@@ -37,6 +48,7 @@
         class="msg-form-text-area"
         placeholder="Write your message here..."
         rows="10"
+        minlength="20"
         required
       ></textarea>
     </div>
@@ -93,6 +105,10 @@
 
   .msg-form-btn {
     @include custom-orange-btn;
+
+    &:hover {
+      background: darken($primary-orange, 10%);
+    }
   }
 }
 
