@@ -3,6 +3,7 @@ import { ref } from "vue";
 import ServicesInfo from "@/components/servicesSection/servicesContent/ContentServices.vue";
 import FaqsInfo from "@/components/servicesSection/servicesContent/FaqsServices.vue";
 import SectionTitles from "@/components/reusableComponents/SectionTitles.vue";
+import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
 
 //Props Content
 const sectionTitle = ref("Services");
@@ -16,11 +17,13 @@ const sectionInfo = ref(
     <SectionTitles :section-title="sectionTitle" :section-info="sectionInfo" />
     <ServicesInfo />
     <FaqsInfo />
+    <TheCallBtn />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .services-landing-container {
   margin-block: $spacing-section;
+  text-align: center;
 }
 </style>
