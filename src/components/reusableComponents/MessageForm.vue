@@ -2,8 +2,18 @@
 import { ref } from "vue";
 
 // Reactive Properties
-const isSubmitted = ref(false);
-const hasError = ref(false);
+const phoneNumber = ref("");
+
+// Methods
+const formatPhoneNumber = (event) => {
+  let input = event.target.value.replace(/\D/g, "");
+  if (input.length > 3 && input.length <= 6) {
+    input = `${input.slice(0, 3)}-${input.slice(3)}`;
+  } else if (input.length > 6) {
+    input = `${input.slice(0, 3)}-${input.slice(3, 6)}-${input.slice(6, 10)}`;
+  }
+  phoneNumber.value = input;
+};
 </script>
 
 <template>
@@ -36,6 +46,8 @@ const hasError = ref(false);
         class="msg-form-input"
         placeholder="123-456-7890"
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        v-model="phoneNumber"
+        @input="formatPhoneNumber"
         required
         aria-describedby="phone-help"
       />
