@@ -27,14 +27,14 @@ The site was meticulously built with **Vue.js**, **SCSS**, **Formspree**, and **
 
 <p float="left">
   <img src="src/assets/screenshots/desktop-main.png" width="auto" alt="Desktop screenshot">
-  <img src="src/assets/screenshots/desktop-gallery.png" width="auto" alt="Desktop gallery screenshot">
+  <img src="src/assets/screenshots/desktop-about.png" width="auto" alt="Desktop gallery screenshot">
 </p>
 
 ### Mobile
 
 <p float="left">
   <img src="src/assets/screenshots/mobile-main.png" width="300px" alt="Mobile main screenshot">
-  <img src="src/assets/screenshots/mobile-gallery.png" width="300px" alt="Mobile gallery screenshot">
+  <img src="src/assets/screenshots/mobile-about.png" width="300px" alt="Mobile gallery screenshot">
 </p>
 
 ---
