@@ -1,6 +1,6 @@
 # The Dog Days 🐾
 
-**Live Site:** [The Dog Days](https://dev-jlagunas.github.io/dog-days/)
+**Live Site:** [The Dog Days](https://the-dog-days.netlify.app/#/)
 
 This is a website for **Harrison's dog walking, sitting, and visiting business** based in Menifee, California. Harrison is a sole proprietor who currently works with several families. The purpose of the site is to provide essential information about Harrison and his services, allowing users to easily **call** or **email** him to request more information or schedule an appointment.
 
