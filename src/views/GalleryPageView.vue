@@ -11,13 +11,13 @@ import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
 
 <template>
   <div class="content-container gallery-imgs-container">
-    <img :src="dogImg1" alt="shiba inu on a leash" />
-    <img :src="dogImg2" alt="golden retriever on a leash" />
-    <img :src="dogImg3" alt="poodle looking at the camera" />
-    <img :src="pawPrint" alt="" class="paw-print-img" />
-    <img :src="dogImg4" alt="black and white dog on leash" />
-    <img :src="dogImg5" alt="puppy looking at the camera" />
-    <img :src="dogImg6" alt="walking dog on a hill" />
+    <img :src="dogImg1" alt="shiba inu on a leash" loading="lazy" />
+    <img :src="dogImg2" alt="golden retriever on a leash" loading="lazy" />
+    <img :src="dogImg3" alt="poodle looking at the camera" loading="lazy" />
+    <img :src="pawPrint" alt="" class="paw-print-img" loading="lazy" />
+    <img :src="dogImg4" alt="black and white dog on leash" loading="lazy" />
+    <img :src="dogImg5" alt="puppy looking at the camera" loading="lazy" />
+    <img :src="dogImg6" alt="walking dog on a hill" loading="lazy" />
   </div>
   <p class="gallery-footer-tagline">Happy and healthy doggies everywhere!</p>
   <div class="call-btn-wrapper"><TheCallBtn /></div>

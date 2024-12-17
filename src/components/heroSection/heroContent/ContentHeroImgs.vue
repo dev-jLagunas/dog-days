@@ -26,34 +26,40 @@ import ownerDrawing from "@/assets/images/harrison-drawing.webp";
       :src="forestWalk"
       alt="Scenic dog walk through forest"
       class="hero-content-img hero-content-forest-img"
+      loading="lazy"
     />
     <img
       :src="pawPrint"
       alt=""
       role="presentation"
       class="hero-content-paw-img"
+      loading="lazy"
     />
     <img
       :src="pawPrint"
       alt=""
       role="presentation"
       class="hero-content-paw-img"
+      loading="lazy"
     />
     <img
       :src="dogLook"
       alt="A leashed dog sitting camly"
       class="hero-content-img hero-content-sitting-img"
+      loading="lazy"
     />
     <img
       :src="cityWalk"
       alt="A dog walk through the city"
       class="hero-content-img hero-content-city-img"
+      loading="lazy"
     />
     <img
       :src="pawPrint"
       alt=""
       role="presentation"
       class="hero-content-paw-img"
+      loading="lazy"
     />
   </div>
 </template>

@@ -22,6 +22,7 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.webp";
             :src="pawPrintSvg"
             alt="svg of a paw print"
             class="join-info-item-img"
+            loading="lazy"
           />Have questions or want to book a service?
         </li>
         <li class="join-info-item">
@@ -29,6 +30,7 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.webp";
             :src="pawPrintSvg"
             alt="svg of a paw print"
             class="join-info-item-img"
+            loading="lazy"
           />Have a special request or specific care instructions? Just let me
           know!
         </li>
@@ -38,9 +40,19 @@ import dogsRightImg from "@/assets/pngs/row-dog-right.webp";
         you and your furry family!
       </p>
       <div class="join-imgs-wrapper">
-        <img :src="dogsLeftImg" alt="" class="join-info-svg dogs-left-svg" />
-        <img :src="harrisonImg" alt="" class="join-info-svg" />
-        <img :src="dogsRightImg" alt="" class="join-info-svg dogs-right-svg" />
+        <img
+          :src="dogsLeftImg"
+          alt=""
+          class="join-info-svg dogs-left-svg"
+          loading="lazy"
+        />
+        <img :src="harrisonImg" alt="" class="join-info-svg" loading="lazy" />
+        <img
+          :src="dogsRightImg"
+          alt=""
+          class="join-info-svg dogs-right-svg"
+          loading="lazy"
+        />
       </div>
     </div>
     <MessageForm />

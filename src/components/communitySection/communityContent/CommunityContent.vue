@@ -7,7 +7,7 @@ import menifeeImg from "@/assets/pngs/menifee-town.webp";
 <template>
   <div class="community-content-container">
     <article class="community-info-wrapper">
-      <img :src="dogRunImg" alt="" class="community-info-img" />
+      <img :src="dogRunImg" alt="" class="community-info-img" loading="lazy" />
       <p class="community-img-text">
         I love taking pups to Hidden Valley Park or around Menifee Lakes.
       </p>
@@ -19,7 +19,12 @@ import menifeeImg from "@/assets/pngs/menifee-town.webp";
       <p class="community-img-text-b">
         Named a trusted dog walker by dozens of local families.
       </p>
-      <img :src="dogChillImg" alt="" class="community-info-img-b" />
+      <img
+        :src="dogChillImg"
+        alt=""
+        class="community-info-img-b"
+        loading="lazy"
+      />
     </article>
   </div>
 </template>

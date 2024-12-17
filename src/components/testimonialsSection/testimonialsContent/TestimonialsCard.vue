@@ -40,6 +40,7 @@ const testimonials = ref([
           v-for="n in testimonial.stars"
           :key="n"
           class="testimonials-card-star-img"
+          loading="lazy"
         />
       </div>
       <p class="testimonials-card-text">{{ testimonial.text }}</p>
