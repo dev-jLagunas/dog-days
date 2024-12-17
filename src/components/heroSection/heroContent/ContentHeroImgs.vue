@@ -17,7 +17,7 @@ import ownerDrawing from "@/assets/images/harrison-drawing.png";
 
     <!-- Tagline -->
     <p class="hero-content-tagline">
-      Brighten your pet&rsquo;s day! The Dog Days with Harrison. Menifee&rsquo;s
+      Brighten your pet&rsquo;s day! The Dog Days with Harrison. Menifee, CA,
       trusted, compassionate care for furry friends.
     </p>
 
