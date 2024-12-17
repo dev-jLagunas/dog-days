@@ -59,8 +59,19 @@ const scrollToTop = () => {
         </li>
       </ul>
       <ul class="the-footer-contact-wrapper">
-        <li>619-555-5555</li>
-        <li>dog.days.harisson@gmail.com</li>
+        <li>
+          <a href="tel:+16195555555" class="the-footer-contact-link">
+            619-555-5555
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:dog.days.harisson@gmail.com"
+            class="the-footer-contact-link"
+          >
+            dog.days.harisson@gmail.com
+          </a>
+        </li>
       </ul>
       <div class="the-footer-title-wrapper">
         <h2>The Dog Days</h2>
@@ -126,6 +137,17 @@ const scrollToTop = () => {
     font-size: $font-md;
     margin-bottom: $spacing-md;
   }
+}
+
+.the-footer-contact-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.the-footer-contact-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .the-footer-privacy-btn {

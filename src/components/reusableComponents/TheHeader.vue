@@ -15,10 +15,11 @@ const toggleSidenav = () => {
 
 <template>
   <header class="content-container the-header-container">
-    <div class="the-header-title-wrapper">
+    <router-link to="/" class="the-header-title-wrapper">
       <h1 class="the-header-title">The Dog Days</h1>
       <p class="the-header-subtitle">with Harrison</p>
-    </div>
+    </router-link>
+
     <button class="the-header-sidenav-btn" @click="toggleSidenav">
       <img
         :src="sidebarSvg"
@@ -34,6 +35,7 @@ const toggleSidenav = () => {
 <style lang="scss" scoped>
 .the-header-container {
   @include flex-row-between;
+  cursor: pointer;
 }
 
 .the-header-title-wrapper {
