@@ -103,6 +103,7 @@ const scrollToTop = () => {
   padding: $spacing-reg;
   border-radius: $radius-sm;
   margin-bottom: $spacing-md;
+  min-height: 150px;
 
   .the-footer-scroll-btn {
     width: max-content;
