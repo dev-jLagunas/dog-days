@@ -60,7 +60,10 @@ const scrollToTop = () => {
       </ul>
       <ul class="the-footer-contact-wrapper">
         <li>
-          <a href="tel:+16195555555" class="the-footer-contact-link">
+          <a
+            href="tel:+16195555555"
+            class="the-footer-contact-link the-footer-phone-link"
+          >
             619-555-5555
           </a>
         </li>
@@ -131,11 +134,12 @@ const scrollToTop = () => {
   .the-footer-contact-wrapper {
     @include flex-column;
     font-size: $font-reg;
+    gap: $spacing-reg;
   }
 
   .the-footer-title-wrapper {
     font-size: $font-md;
-    margin-bottom: $spacing-md;
+    margin-bottom: $spacing-reg;
   }
 }
 
@@ -169,6 +173,10 @@ const scrollToTop = () => {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    .the-footer-contact-wrapper {
+      margin-bottom: $spacing-md;
+    }
   }
 }
 
