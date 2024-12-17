@@ -2,7 +2,6 @@
 import dogPhoneImg from "@/assets/pngs/dog-calling.png";
 import dogEmailImg from "@/assets/pngs/dog-emailing.png";
 import menifeeAreaImg from "@/assets/pngs/menifee-area.png";
-import TheCallBtn from "@/components/reusableComponents/TheCallBtn.vue";
 import MessageForm from "@/components/reusableComponents/MessageForm.vue";
 
 const contactInfo = [
@@ -77,28 +76,28 @@ const contactInfo = [
 
 @media (width >= 768px) {
   .content-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
+    @include grid-two-column;
   }
 }
 
 @media (width >= 1024px) {
   .content-container {
+    margin-top: $spacing-md;
   }
 
   .contact-icon {
-    width: 50%;
+    width: 40%;
     object-fit: contain;
   }
 
   .contact-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 90%;
 
     .contact-item-wrapper:nth-of-type(3) {
       grid-column: 1/3;
+      height: 50%;
     }
   }
 }
